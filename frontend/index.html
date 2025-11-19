@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMOTIA NICHE CLASSIFIER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PROMOTIA<br>NICHE<br>CLASSIFIER</h1>
+        </header>
+
+        <main>
+            <section id="upload-section" class="panel">
+                <h2>// UPLOAD IMAGE</h2>
+                <div id="drop-zone">
+                    <p>DRAG & DROP OR CLICK TO UPLOAD</p>
+                    <input type="file" id="file-input" accept="image/*" hidden>
+                </div>
+            </section>
+
+            <section id="result-section" class="panel hidden">
+                <h2>// CLASSIFICATION RESULT</h2>
+                <div class="result-content">
+                    <img id="preview-image" src="" alt="Uploaded Image">
+                    <div class="data-box">
+                        <p>NICHE: <span id="niche-result" class="highlight">LOADING...</span></p>
+                        <p>CONFIDENCE: <span id="confidence-result">0.00</span></p>
+                    </div>
+                    
+                    <div class="keywords-box">
+                        <h3>DETECTED KEYWORDS:</h3>
+                        <ul id="keywords-list"></ul>
+                    </div>
+
+                    <div class="feedback-box">
+                        <h3>IS THIS CORRECT?</h3>
+                        <div class="feedback-controls">
+                            <button id="btn-correct" class="btn">YES</button>
+                            <button id="btn-incorrect" class="btn">NO</button>
+                        </div>
+                        <div id="correction-form" class="hidden">
+                            <select id="niche-select">
+                                <option value="" disabled selected>SELECT CORRECT NICHE</option>
+                            </select>
+                            <button id="btn-submit-correction" class="btn">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>SYSTEM STATUS: ONLINE</p>
+            <p>v1.0.0</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
