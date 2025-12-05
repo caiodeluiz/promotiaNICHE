@@ -5,3 +5,20 @@ python-dotenv
 pydantic
 sqlalchemy
 python-multipart
+replicate
+rembg
+pillow
+openai
+requests
+
+# 3D Pipeline Dependencies
+aiohttp
+aiofiles
+trimesh
+pygltflib
+ffmpeg-python
+tenacity
+pyjwt
+
+# Payment Processing
+stripe
