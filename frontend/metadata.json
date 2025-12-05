@@ -1,0 +1,5 @@
+{
+  "name": "Listify - AI Marketplace Generator",
+  "description": "Generate high-converting product listings for Amazon, Shopify, and eBay using Gemini AI. Features a 3D immersive landing page and image recognition capabilities.",
+  "requestFramePermissions": []
+}
